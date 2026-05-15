@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:8080
+
+### Root
+GET {{baseUrl}}/
+
+### Health
+GET {{baseUrl}}/health
+
+### Actuator health
+GET {{baseUrl}}/actuator/health
+
+### List users
+GET {{baseUrl}}/api/v1/users
+
+### Create user
+POST {{baseUrl}}/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "Grace Hopper",
+  "email": "grace@example.com"
+}
+
+### Get user by id
+GET {{baseUrl}}/api/v1/users/11111111-1111-1111-1111-111111111111
+
+### Update user
+PATCH {{baseUrl}}/api/v1/users/11111111-1111-1111-1111-111111111111
+Content-Type: application/json
+
+{
+  "name": "Ada Byron Lovelace"
+}
+
+### Delete user
+DELETE {{baseUrl}}/api/v1/users/11111111-1111-1111-1111-111111111111
+
+### OpenAPI JSON
+GET {{baseUrl}}/api/v1/openapi/v1.json

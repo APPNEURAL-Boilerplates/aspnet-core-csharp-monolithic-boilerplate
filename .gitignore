@@ -1,0 +1,29 @@
+# Build output
+bin/
+obj/
+out/
+artifacts/
+TestResults/
+coverage/
+
+# User/local files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker/local data
+.docker/

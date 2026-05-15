@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dotnet-monolith-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: 8080
+      Cors__AllowedOrigins__0: http://localhost:3000
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
