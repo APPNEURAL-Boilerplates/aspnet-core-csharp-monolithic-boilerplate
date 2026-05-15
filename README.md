@@ -15,7 +15,7 @@ A production-friendly ASP.NET Core **monolithic / modular monolith** starter usi
 ## Structure
 
 ```txt
-dotnet-csharp-monolithic-boilerplate/
+aspnet-core-csharp-monolithic-boilerplate/
 ├─ src/
 │  └─ DotnetMonolith.Api/
 │     ├─ Program.cs
